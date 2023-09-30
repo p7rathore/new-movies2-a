@@ -1,0 +1,2557 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Keania+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* nav-baar */
+.nav-baar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-icon-name {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+.icon-site-name {
+  margin-top: 10px;
+  font-family: "Kiwi Maru";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.ul {
+  display: flex;
+  gap: 25px;
+  margin-top: 25px;
+}
+.li {
+  list-style-type: none;
+  font-family: "Kiwi Maru";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #939393;
+}
+.a {
+  text-decoration: none;
+}
+.menu {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  margin-top: 15px;
+  display: none;
+}
+.fa-bars {
+  font-size: 30px;
+  margin-left: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* search */
+.search {
+  width: 440px;
+  height: 48px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.ser-input {
+  width: 350px;
+  height: 48px;
+  margin-left: 10px;
+  font-family: "Kiwi Maru";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  background: transparent;
+  color: #a8a8a8;
+}
+.ser-input:focus {
+  outline: none;
+}
+.ser-button {
+  width: 70px;
+  height: 45px;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+  cursor: pointer;
+}
+/* images-slider */
+.images-slider {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.sli-img {
+  width: 1300px;
+  height: 400px;
+  background-color: #dadada;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  display: flex;
+  gap: 820px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.images-im {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.image-details {
+  position: relative;
+  width: 500px;
+  height: 400px;
+}
+.image-deatils-di {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+.poster-name {
+  font-family: "Keania One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Anton", sans-serif;
+  font-family: "Keania One", cursive;
+}
+.poster-p {
+  height: 100px;
+  margin-top: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  font-size: 17px;
+  text-align: center;
+  color: #ffffff;
+}
+.poster-p::-webkit-scrollbar {
+  display: none;
+}
+.relese-date {
+  font-family: "Gidugu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  margin-top: 15px;
+  /* identical to box height, or 47% */
+  text-align: center;
+  color: #ffffff;
+}
+.two-di {
+  display: flex;
+  gap: 10px;
+}
+.gen1,
+.gen2 {
+  width: 131px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-left: 40px;
+  cursor: pointer;
+  color: white;
+}
+.gen1:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+  border: none;
+}
+.gen2:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+  border: none;
+}
+/* popular-movies commponent */
+.popular-movies {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+}
+.popular-movie-text {
+  font-family: "Gidugu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #000000;
+}
+.movies-po {
+  width: 1300px;
+  height: auto;
+}
+.card {
+  width: 100%;
+  height: 398px;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  overflow-x: scroll;
+  margin-top: 30px;
+  scroll-behavior: smooth;
+}
+.card::-webkit-scrollbar {
+  display: none;
+}
+.card-div-sec {
+  width: 218px;
+  height: 398px;
+  cursor: pointer;
+}
+.card-img {
+  width: 218px;
+  height: 348px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+}
+.card-movies-name {
+  font-family: "Kelly Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  text-align: center;
+  color: #110000;
+}
+.next-pre-btn {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+.pre-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  background: #ffffff;
+  margin-left: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.fa-chevron-left {
+  font-size: 25px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.next-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 30px;
+  cursor: pointer;
+}
+.next-button:hover {
+  background-color: #905ef1;
+  color: white;
+  transition: 1s;
+}
+.pre-button:hover {
+  background-color: #905ef1;
+  color: white;
+  transition: 1s;
+}
+.fa-angle-right {
+  font-size: 25px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* footer-section */
+.footer-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.footer {
+  width: 1300px;
+  height: 200px;
+  background-color: #905ef1;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.footer-text {
+  font-family: "Keania One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Anton", sans-serif;
+  cursor: pointer;
+  font-family: "Keania One", cursive;
+  margin-top: 80px;
+}
+.footer-p {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* movies-component */
+.movies-component {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  margin-top: 50px;
+}
+.movies-list {
+  width: 1300px;
+  height: auto;
+}
+.name-movies {
+  font-family: "Kiwi Maru";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 29px;
+  color: #000000;
+}
+.movies-list-w {
+  height: auto;
+  width: 100%;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+.movies-card-l {
+  width: 200px;
+  height: 350px;
+  overflow: hidden;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.card-images-i {
+  width: 200px;
+  height: 280px;
+  border-radius: 20px;
+  background-color: rgb(232, 232, 232);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.movies-list-name {
+  font-family: "Kiwi Maru";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+/* next-page */
+.next-page {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.next-pre-page {
+  width: 900px;
+  height: 100px;
+  background-color: #00d9f5;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-around;
+}
+.pre-page-button {
+  width: 273px;
+  height: 76px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 13px;
+  cursor: pointer;
+}
+.page-number-show {
+  width: 273px;
+  height: 76px;
+  background: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 13px;
+}
+.next-page-button {
+  width: 273px;
+  height: 76px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 13px;
+}
+.pre-text-page {
+  text-align: center;
+  font-family: "Kiwi Maru";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  margin-top: 8px;
+  color: #000000;
+}
+.page-num {
+  text-align: center;
+  font-family: "Kiwi Maru";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  margin-top: 8px;
+  color: #000000;
+}
+.next-text-page {
+  text-align: center;
+  font-family: "Kiwi Maru";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 58px;
+  margin-top: 8px;
+  color: #000000;
+}
+.pre-page-button:hover {
+  background-color: #905ef1;
+  color: white;
+  transition: 1s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.next-page-button:hover {
+  background-color: #905ef1;
+  color: white;
+  transition: 1s;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Media query */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+  .ul {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+  .sli-img {
+    width: 350px;
+    height: 300px;
+  }
+  .images-im {
+    height: 300px;
+  }
+  /*  */
+  .image-details {
+    width: 100%;
+    height: auto;
+  }
+  .image-deatils-di {
+    width: 300px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .poster-name {
+    font-size: 30px;
+  }
+  .poster-p {
+    width: 250px;
+    height: 70px;
+    margin-top: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 25px;
+    color: #ffffff;
+  }
+
+  .relese-date {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 15px;
+    /* identical to box height, or 47% */
+    text-align: center;
+    color: #ffffff;
+  }
+
+  /* popular-movies commponent */
+  .popular-movies {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .popular-movie-text {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 23px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+  }
+  .movies-po {
+    width: 350px;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+    height: 298px;
+    display: flex;
+
+    gap: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+  }
+
+  .card-div-sec {
+    width: 118px;
+    height: 298px;
+    cursor: pointer;
+  }
+  .card-img {
+    width: 118px;
+    height: 248px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+  }
+  .card-movies-name {
+    font-family: "Kelly Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    color: #110000;
+  }
+  .next-pre-btn {
+    margin-top: 170px;
+  }
+  .pre-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background: #ffffff;
+    margin-left: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+
+  .next-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  /* footer */
+  .footer-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .footer {
+    width: 350px;
+    height: 150px;
+    background-color: #905ef1;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .footer-text {
+    margin-top: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: block;
+  }
+  .ul {
+    display: none;
+  }
+  .sli-img {
+    width: 750px;
+    height: 300px;
+  }
+  .images-im {
+    height: 300px;
+  }
+  /*  */
+  .image-details {
+    width: 100%;
+    height: auto;
+  }
+  .image-deatils-di {
+    width: 350px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .poster-name {
+    font-size: 40px;
+  }
+  .poster-p {
+    width: 250px;
+    height: 70px;
+    margin-top: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 40px;
+    color: #ffffff;
+  }
+
+  .relese-date {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 15px;
+    /* identical to box height, or 47% */
+    text-align: center;
+    color: #ffffff;
+  }
+
+  /* popular-movies commponent */
+  .popular-movies {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .popular-movie-text {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+  }
+  .movies-po {
+    width: 750px;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+    height: 298px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+  }
+
+  .card-div-sec {
+    width: 218px;
+    height: 348px;
+    cursor: pointer;
+  }
+  .card-img {
+    width: 188px;
+    height: 258px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+  }
+  .card-movies-name {
+    font-family: "Kelly Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    color: #110000;
+  }
+  .next-pre-btn {
+    margin-top: 170px;
+  }
+  .pre-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background: #ffffff;
+    margin-left: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+
+  .next-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  /* footer */
+  .footer-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .footer {
+    width: 750px;
+    height: 150px;
+    background-color: #905ef1;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .footer-text {
+    margin-top: 50px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* nav-baar */
+  .nav-baar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-icon-name {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
+  .icon-site-name {
+    margin-top: 10px;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  .ul {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+  }
+  .li {
+    list-style-type: none;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #939393;
+  }
+  .a {
+    text-decoration: none;
+  }
+  .menu {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-top: 15px;
+    display: none;
+  }
+  .fa-bars {
+    font-size: 30px;
+    margin-left: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  /* search */
+  .search {
+    width: 440px;
+    height: 48px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .ser-input {
+    width: 350px;
+    height: 48px;
+    margin-left: 10px;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    color: #a8a8a8;
+  }
+  .ser-input:focus {
+    outline: none;
+  }
+  .ser-button {
+    width: 70px;
+    height: 45px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+    cursor: pointer;
+  }
+  /* images-slider */
+  .images-slider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .sli-img {
+    width: 1300px;
+    height: 400px;
+    background-color: #dadada;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    display: flex;
+    gap: 820px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .images-im {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  .image-details {
+    position: relative;
+    width: 500px;
+    height: 400px;
+  }
+  .image-deatils-di {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 40px;
+  }
+  .poster-name {
+    font-family: "Keania One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Anton", sans-serif;
+    font-family: "Keania One", cursive;
+  }
+  .poster-p {
+    height: 100px;
+    margin-top: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    font-size: 17px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .poster-p::-webkit-scrollbar {
+    display: none;
+  }
+  .relese-date {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 15px;
+    /* identical to box height, or 47% */
+    text-align: center;
+    color: #ffffff;
+  }
+  .two-di {
+    display: flex;
+    gap: 10px;
+  }
+  .gen1,
+  .gen2 {
+    width: 131px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+    color: white;
+  }
+  .gen1:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+    border: none;
+  }
+  .gen2:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+    border: none;
+  }
+  /* popular-movies commponent */
+  .popular-movies {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .popular-movie-text {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+  }
+  .movies-po {
+    width: 1300px;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+    height: 398px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+  }
+  .card::-webkit-scrollbar {
+    display: none;
+  }
+  .card-div-sec {
+    width: 218px;
+    height: 398px;
+    cursor: pointer;
+  }
+  .card-img {
+    width: 218px;
+    height: 348px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+  }
+  .card-movies-name {
+    font-family: "Kelly Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    color: #110000;
+  }
+  .next-pre-btn {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+  .pre-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    background: #ffffff;
+    margin-left: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  .fa-chevron-left {
+    font-size: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .next-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 30px;
+    cursor: pointer;
+  }
+  .next-button:hover {
+    background-color: #905ef1;
+    color: white;
+    transition: 1s;
+  }
+  .pre-button:hover {
+    background-color: #905ef1;
+    color: white;
+    transition: 1s;
+  }
+  .fa-angle-right {
+    font-size: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  /* footer-section */
+  .footer-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .footer {
+    width: 1300px;
+    height: 200px;
+    background-color: #905ef1;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .footer-text {
+    font-family: "Keania One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Anton", sans-serif;
+    cursor: pointer;
+    font-family: "Keania One", cursive;
+    margin-top: 80px;
+  }
+  .footer-p {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* nav-baar */
+  .nav-baar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-icon-name {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
+  .icon-site-name {
+    margin-top: 10px;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  .ul {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+  }
+  .li {
+    list-style-type: none;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #939393;
+  }
+  .a {
+    text-decoration: none;
+  }
+  .menu {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin-top: 15px;
+    display: none;
+  }
+  .fa-bars {
+    font-size: 30px;
+    margin-left: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  /* search */
+  .search {
+    width: 440px;
+    height: 48px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .ser-input {
+    width: 350px;
+    height: 48px;
+    margin-left: 10px;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    color: #a8a8a8;
+  }
+  .ser-input:focus {
+    outline: none;
+  }
+  .ser-button {
+    width: 70px;
+    height: 45px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 25px;
+    background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+    cursor: pointer;
+  }
+  /* images-slider */
+  .images-slider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .sli-img {
+    width: 1300px;
+    height: 400px;
+    background-color: #dadada;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    display: flex;
+    gap: 820px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .images-im {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  .image-details {
+    position: relative;
+    width: 500px;
+    height: 400px;
+  }
+  .image-deatils-di {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 40px;
+  }
+  .poster-name {
+    font-family: "Keania One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Anton", sans-serif;
+    font-family: "Keania One", cursive;
+  }
+  .poster-p {
+    width: 350px;
+    height: 100px;
+    margin-top: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-size: 17px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .poster-p::-webkit-scrollbar {
+    display: none;
+  }
+  .relese-date {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    margin-top: 15px;
+    /* identical to box height, or 47% */
+    text-align: center;
+    color: #ffffff;
+  }
+  .two-di {
+    display: flex;
+    gap: 10px;
+  }
+  .gen1,
+  .gen2 {
+    width: 131px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+    color: white;
+  }
+  .gen1:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+    border: none;
+  }
+  .gen2:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+    border: none;
+  }
+  /* popular-movies commponent */
+  .popular-movies {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .popular-movie-text {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #000000;
+  }
+  .movies-po {
+    width: 1300px;
+    height: auto;
+  }
+  .card {
+    width: 100%;
+    height: 398px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-top: 30px;
+    scroll-behavior: smooth;
+  }
+  .card::-webkit-scrollbar {
+    display: none;
+  }
+  .card-div-sec {
+    width: 218px;
+    height: 398px;
+    cursor: pointer;
+  }
+  .card-img {
+    width: 218px;
+    height: 348px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+  }
+  .card-movies-name {
+    font-family: "Kelly Slab";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    color: #110000;
+  }
+  .next-pre-btn {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+  }
+  .pre-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    background: #ffffff;
+    margin-left: 80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+  .fa-chevron-left {
+    font-size: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .next-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 80px;
+    cursor: pointer;
+  }
+  .next-button:hover {
+    background-color: #905ef1;
+    color: white;
+    transition: 1s;
+  }
+  .pre-button:hover {
+    background-color: #905ef1;
+    color: white;
+    transition: 1s;
+  }
+  .fa-angle-right {
+    font-size: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  /* footer-section */
+  .footer-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .footer {
+    width: 1300px;
+    height: 200px;
+    background-color: #905ef1;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .footer-text {
+    font-family: "Keania One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Anton", sans-serif;
+    cursor: pointer;
+    font-family: "Keania One", cursive;
+    margin-top: 80px;
+  }
+  .footer-p {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Movies page desing Media query */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* movies-component */
+  .movies-component {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .movies-list {
+    width: 350px;
+    height: auto;
+  }
+  .name-movies {
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    color: #000000;
+  }
+  .movies-list-w {
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  .movies-card-l {
+    width: 150px;
+    height: 280px;
+    overflow: hidden;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .card-images-i {
+    width: 150px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgb(232, 232, 232);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .movies-list-name {
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+  }
+  /* next-page */
+  .next-page {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .next-pre-page {
+    width: 350px;
+    height: 100px;
+  }
+  .pre-page-button {
+    width: 100px;
+    height: 76px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+  .page-number-show {
+    width: 100px;
+    height: 76px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 13px;
+  }
+  .next-page-button {
+    width: 100px;
+    height: 76px;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 13px;
+  }
+  .pre-text-page {
+    text-align: center;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 58px;
+    margin-top: 8px;
+    color: #000000;
+  }
+  .page-num {
+    text-align: center;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 58px;
+    margin-top: 8px;
+    color: #000000;
+  }
+  .next-text-page {
+    text-align: center;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 58px;
+    margin-top: 8px;
+    color: #000000;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* ................ */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* movies-component */
+  .movies-component {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .movies-list {
+    width: 750px;
+    height: auto;
+  }
+  .name-movies {
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    color: #000000;
+  }
+  .movies-list-w {
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .movies-card-l {
+    width: 200px;
+    height: 280px;
+    overflow: hidden;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .card-images-i {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgb(232, 232, 232);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .movies-list-name {
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+  }
+  /* next-page */
+  .next-page {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .next-pre-page {
+    width: 750px;
+    height: 100px;
+  }
+  .pre-page-button {
+    width: 150px;
+    height: 76px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+  .page-number-show {
+    width: 150px;
+    height: 76px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 13px;
+  }
+  .next-page-button {
+    width: 150px;
+    height: 76px;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 13px;
+  }
+  .pre-text-page {
+    text-align: center;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 58px;
+    margin-top: 8px;
+    color: #000000;
+  }
+  .page-num {
+    text-align: center;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 58px;
+    margin-top: 8px;
+    color: #000000;
+  }
+  .next-text-page {
+    text-align: center;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 58px;
+    margin-top: 8px;
+    color: #000000;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* ......... */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* movies-component */
+  .movies-component {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .movies-list {
+    width: 1300px;
+    height: auto;
+  }
+  .name-movies {
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    color: #000000;
+  }
+  .movies-list-w {
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+  }
+  .movies-card-l {
+    width: 200px;
+    height: 280px;
+    overflow: hidden;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  .card-images-i {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: rgb(232, 232, 232);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .movies-list-name {
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+  }
+  /* next-page */
+  .next-page {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .next-pre-page {
+    width: 750px;
+    height: 100px;
+  }
+  .pre-page-button {
+    width: 150px;
+    height: 76px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 13px;
+    cursor: pointer;
+  }
+  .page-number-show {
+    width: 150px;
+    height: 76px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 13px;
+  }
+  .next-page-button {
+    width: 150px;
+    height: 76px;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 13px;
+  }
+  .pre-text-page {
+    text-align: center;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 58px;
+    margin-top: 8px;
+    color: #000000;
+  }
+  .page-num {
+    text-align: center;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 58px;
+    margin-top: 8px;
+    color: #000000;
+  }
+  .next-text-page {
+    text-align: center;
+    font-family: "Kiwi Maru";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 58px;
+    margin-top: 8px;
+    color: #000000;
+  }
+}
+
+/* result-page-movies */
+.result-page-movies {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.movies-result {
+  width: 1300px;
+  height: 500px;
+  background-color: #00f5a0;
+  border-radius: 20px;
+  overflow: hidden;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.movies-imges-result-page {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.text-movies-name {
+  position: absolute;
+  top: 350px;
+  left: 350px;
+  font-family: "Keania One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Anton", sans-serif;
+  font-family: "Keania One", cursive;
+}
+/* overview-paragraf */
+.overview-paragraf {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.o-para {
+  width: 1100px;
+  height: auto;
+}
+.paragarf {
+  font-family: "Gidugu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 45px;
+  text-align: center;
+  color: #050000;
+}
+/* movies-video-trailers */
+.movies-video-trailers {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  margin-top: 50px;
+}
+.movies-tra {
+  width: 1300px;
+  height: auto;
+  display: flex;
+  gap: 150px;
+  background-color: #00d9f5;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.movies-trailer-1 {
+  width: 500px;
+  height: 400px;
+}
+.ifram {
+  width: 650px;
+  height: 400px;
+}
+/* genres */
+.genres {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  margin-top: 30px;
+}
+.genres-names {
+  width: 900px;
+  height: 150px;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+.genres-text-div {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #dadada;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.genres-text-p {
+  text-align: center;
+  font-family: "Gidugu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 35px;
+  color: #050000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* more-details */
+.more-details {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.m-details {
+  width: 900px;
+  height: 200px;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+}
+.box-more-details {
+  width: 200px;
+  height: auto;
+}
+.name-more-details {
+  text-align: center;
+  font-family: "Kiwi Maru";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 52px;
+  color: #0d0000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.name-laung {
+  text-align: center;
+  font-family: "Gidugu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  /* identical to box height, or 73% */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #050000;
+  margin-top: 5px;
+}
+.name-of-lauguages {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(216, 216, 216);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* moies page ressult page */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .movies-result {
+    width: 350px;
+    height: 350px;
+    margin-top: 40px;
+  }
+  .movies-imges-result-page {
+    height: 350px;
+  }
+  .text-movies-name {
+    position: absolute;
+    top: 240px;
+    left: 50px;
+  }
+  /* overview-paragraf */
+  .overview-paragraf {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .o-para {
+    width: 350px;
+    height: auto;
+  }
+  .paragarf {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #050000;
+  }
+
+  .movies-tra {
+    width: 350px;
+    height: auto;
+    display: flex;
+    gap: 5px;
+
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .movies-trailer-1 {
+    width: 350px;
+    height: 300px;
+  }
+  .ifram {
+    width: 350px;
+    height: 300px;
+  }
+  /* genres */
+  .genres {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .genres-names {
+    width: 350px;
+    height: 150px;
+    margin-top: 40px;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  .genres-text-div {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #dadada;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .genres-text-p {
+    text-align: center;
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 35px;
+    color: #050000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* ........................ */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .movies-result {
+    width: 750px;
+    height: 350px;
+    margin-top: 40px;
+  }
+  .movies-imges-result-page {
+    height: 350px;
+  }
+  .text-movies-name {
+    position: absolute;
+    top: 240px;
+    left: 50px;
+  }
+  /* overview-paragraf */
+  .overview-paragraf {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .o-para {
+    width: 750px;
+    height: auto;
+  }
+  .paragarf {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: #050000;
+  }
+  /*  */
+  .movies-tra {
+    width: 750px;
+    height: auto;
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .movies-trailer-1 {
+    width: 750px;
+    height: 300px;
+  }
+  .ifram {
+    width: 750px;
+    height: 300px;
+  }
+  /* genres */
+  .genres {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .genres-names {
+    width: 750px;
+    height: 150px;
+    margin-top: 40px;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  .genres-text-div {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #dadada;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .genres-text-p {
+    text-align: center;
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 35px;
+    color: #050000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  /*  */
+  .m-details {
+    width: 750px;
+    height: 200px;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /*................... */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .movies-result {
+    width: 1300px;
+    height: 350px;
+    margin-top: 40px;
+  }
+  .movies-imges-result-page {
+    height: 350px;
+  }
+  .text-movies-name {
+    position: absolute;
+    top: 240px;
+    left: 50px;
+  }
+  /* overview-paragraf */
+  .overview-paragraf {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .o-para {
+    width: 1300px;
+    height: auto;
+  }
+  .paragarf {
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: #050000;
+  }
+  /*  */
+  .movies-tra {
+    width: 1300px;
+    height: auto;
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .movies-trailer-1 {
+    width: 750px;
+    height: 500px;
+  }
+  .ifram {
+    width: 750px;
+    height: 500px;
+  }
+  /* genres */
+  .genres {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .genres-names {
+    width: 750px;
+    height: 150px;
+    margin-top: 40px;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  .genres-text-div {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #dadada;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .genres-text-p {
+    text-align: center;
+    font-family: "Gidugu";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 35px;
+    color: #050000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  /*  */
+  .m-details {
+    width: 750px;
+    height: 200px;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+  }
+}
+/* serach-page-s */
+.serach-page-s {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.serach-s {
+  width: 1300px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  gap: 10px;
+}
+.search-input {
+  width: 1000px;
+  height: 70px;
+  margin-top: 15px;
+  margin-left: 50px;
+  border: none;
+  font-size: 20px;
+  background: transparent;
+}
+.search-input:focus {
+  outline: none;
+}
+.search-button {
+  width: 200px;
+  height: 70px;
+  margin-top: 15px;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
+}
+.search-button:hover {
+  background-color: #00f5a0;
+  color: white;
+  transition: 1s;
+}
+.fa-magnifying-glass {
+  font-size: 30px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* search component media query */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .serach-s {
+    width: 350px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    gap: 5px;
+  }
+  .search-input {
+    width: 250px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 17px;
+    background: transparent;
+  }
+  .search-input:focus {
+    outline: none;
+  }
+  .search-button {
+    width: 80px;
+    height: 70px;
+    margin-top: 5px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
+  .search-button:hover {
+    background-color: #00f5a0;
+    color: white;
+    transition: 1s;
+  }
+  .fa-magnifying-glass {
+    font-size: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /*.......... */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .serach-s {
+    width: 750px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    gap: 5px;
+  }
+  .search-input {
+    width: 550px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 17px;
+    background: transparent;
+  }
+  .search-input:focus {
+    outline: none;
+  }
+  .search-button {
+    width: 150px;
+    height: 70px;
+    margin-top: 5px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
+  .search-button:hover {
+    background-color: #00f5a0;
+    color: white;
+    transition: 1s;
+  }
+  .fa-magnifying-glass {
+    font-size: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* ........ */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* serach-page-s */
+  .serach-page-s {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .serach-s {
+    width: 1300px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    gap: 10px;
+  }
+  .search-input {
+    width: 1000px;
+    height: 70px;
+    margin-top: 15px;
+    margin-left: 50px;
+    border: none;
+    font-size: 20px;
+    background: transparent;
+  }
+  .search-input:focus {
+    outline: none;
+  }
+  .search-button {
+    width: 200px;
+    height: 70px;
+    margin-top: 15px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+  }
+  .search-button:hover {
+    background-color: #00f5a0;
+    color: white;
+    transition: 1s;
+  }
+  .fa-magnifying-glass {
+    font-size: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+/* hame menu */
+.hame-burgger {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+}
+.hame {
+  position: relative;
+  top: 80px;
+  z-index: 1;
+  width: 350px;
+  height: 300px;
+  background-color: #00f5a0;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .ulh {
+    display: grid;
+    justify-content: center;
+  }
+  .searchh {
+    display: block;
+    width: 70px;
+    background: transparent;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* ...... */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hame {
+    width: 750px;
+  }
+  .ulh {
+    display: grid;
+    justify-content: center;
+  }
+  .searchh {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* ..... */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* ....... */
+}
